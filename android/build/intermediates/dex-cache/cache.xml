@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\fangz\.android\build-cache\ad07af4d0578888c1489817c6cbd894d8416de77\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="576b5113887747a7592650ae14d980e1c57983c4">
+        <dex dex="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e83fcbef21480b59477fa1a11082a01707722953\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\fangz\.android\build-cache\ad07af4d0578888c1489817c6cbd894d8416de77\output\jars\libs\infer-annotations-4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\transforms\dex\debug\folders\1000\10\infer-annotations-4.0_df1cda53b801fcbe1563fe522841ab7586271868\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_5a37dc76a63cc07aa81dc60bf89c001fa5574112\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="eac71dbe2cdf7b170001de61a73f7c4cd73847d8">
+        <dex dex="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_541036e0770f27a779212530a1d5cb002d6cef86\classes.dex" />
+    </item>
+
+</items>

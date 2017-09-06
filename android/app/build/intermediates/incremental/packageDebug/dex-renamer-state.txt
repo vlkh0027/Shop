@@ -1,0 +1,7 @@
+#Wed Aug 23 13:48:44 ICT 2017
+base.0=E\:\\project Mobile\\Ban Hang\\ChooseToCode\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_541036e0770f27a779212530a1d5cb002d6cef86
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=E\:\\project Mobile\\Ban Hang\\ChooseToCode\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_5a37dc76a63cc07aa81dc60bf89c001fa5574112\\classes.dex
+base.1=E\:\\project Mobile\\Ban Hang\\ChooseToCode\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_5a37dc76a63cc07aa81dc60bf89c001fa5574112
+file.0=E\:\\project Mobile\\Ban Hang\\ChooseToCode\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_541036e0770f27a779212530a1d5cb002d6cef86\\classes.dex
