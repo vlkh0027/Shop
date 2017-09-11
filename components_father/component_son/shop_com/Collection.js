@@ -21,7 +21,8 @@ export default class Collection extends Component{
 }
 const styles = StyleSheet.create({
     wrapper:{
-        height:height*0.35,
+        //height:height*0.35,
+        width:width-20,
         margin:10,
         backgroundColor:'#b3b3b3',
         padding:10,
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
 
     },
     textView:{
-        flex:1,
+        height:40,
         justifyContent:'center',
     },
     image:{

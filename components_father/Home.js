@@ -1,5 +1,6 @@
 import React,{Component } from 'React';
 import{Image, StyleSheet, View, Dimensions, Text,TouchableOpacity} from 'react-native';
+import {StackNavigator} from 'react-navigation';
 import TabNavigator from 'react-native-tab-navigator';
 
 import Order from './component_son/Order';
@@ -7,8 +8,9 @@ import Search from './component_son/Search';
 import Shop from './component_son/Shop';
 import Contact from './component_son/Contact';
 import Header from './Header';
-
 var {height, width} = Dimensions.get('window');
+
+
 export default class Home extends Component{
 
  
