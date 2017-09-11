@@ -6,8 +6,8 @@
     density="420dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1503470966868"
-    token="-1232494114477988234"
+    timestamp="1505110123205"
+    token="-7416810672747024633"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
@@ -25,48 +25,48 @@
 
     <build
         build-mode="FULL"
-        timestamp="1503470914749"
+        timestamp="1505109978808"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="E:\projectMobile\gitHub\Shop\android\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="E:\projectMobile\gitHub\Shop\android\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="E:\projectMobile\gitHub\Shop\android\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="E:\projectMobile\gitHub\Shop\android\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="E:\projectMobile\gitHub\Shop\android\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="E:\projectMobile\gitHub\Shop\android\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="E:\projectMobile\gitHub\Shop\android\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="E:\projectMobile\gitHub\Shop\android\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="E:\projectMobile\gitHub\Shop\android\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="E:\projectMobile\gitHub\Shop\android\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="E:\projectMobile\gitHub\Shop\android\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="E:\project Mobile\Ban Hang\ChooseToCode\android\app\build\outputs\apk\app-debug.apk"
+            location="E:\projectMobile\gitHub\Shop\android\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1503470966868"
+        timestamp="1505110123205"
         verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

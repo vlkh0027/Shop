@@ -7,7 +7,7 @@ import HistoryOder from './components_father/HistoryOder';
 import SaleOf from './components_father/SaleOf';
 import Home from './components_father/Home';
 import Menu from './components_father/Menu';
-import Authentication from './components_father/Authentication'
+import Authentication from './components_father/authentication/Authentication';
 
 var {height, width} = Dimensions.get('window');
 
@@ -30,7 +30,7 @@ const MyAppDrawer = DrawerNavigator({
     }
   },
   {
-      //initialRouteName:'Home',
+      initialRouteName:'Home',
       drawerPosition:'left',
       drawerWidth: width/1.5,
       contentComponent: props => <Menu {...props} />
