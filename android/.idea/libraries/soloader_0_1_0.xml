@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="soloader-0.1.0">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.android/build-cache/2fbb6388a432fece73cb0250c0b7390e15226ddb/output/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.android/build-cache/2fbb6388a432fece73cb0250c0b7390e15226ddb/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/a2d4f67fcb0f9178d24a4f1e71005ca794d1478d/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/a2d4f67fcb0f9178d24a4f1e71005ca794d1478d/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

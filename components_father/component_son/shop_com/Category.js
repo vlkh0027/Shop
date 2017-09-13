@@ -22,10 +22,10 @@ export default class Category extends Component{
                         <TouchableOpacity onPress = {()=>{navigate('Detail')}}>
                             <Image style={image} source={require('./../../../image/adidasColl.png')}/>
                         </TouchableOpacity>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress = {()=>{navigate('Detail')}}>
                             <Image style={image} source={require('./../../../image/nikeColl.png')}/>
                         </TouchableOpacity>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress = {()=>{navigate('Detail')}}>
                             <Image style={image} source={require('./../../../image/nikeLebronColl.png')}/>
                         </TouchableOpacity>
                     </Swiper>

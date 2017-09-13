@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "E:\\projectMobile\\gitHub\\Shop\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-v4\\values-xlarge-v4.xml",
+        "outputFile": "/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 127
                 },
                 "from": {
-                    "file": "C:\\Users\\fangz\\.android\\build-cache\\baa3a2d1ae0dd9d1435e4e292704bb5afa4ddc73\\output\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "/Users/macbook-pro/.android/build-cache/b60a7498ecebcd6fb54875c6deda93d6b6a6ce25/output/res/values-xlarge/values-xlarge.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 191
                 },
                 "from": {
-                    "file": "C:\\Users\\fangz\\.android\\build-cache\\baa3a2d1ae0dd9d1435e4e292704bb5afa4ddc73\\output\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "/Users/macbook-pro/.android/build-cache/b60a7498ecebcd6fb54875c6deda93d6b6a6ce25/output/res/values-xlarge/values-xlarge.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 258
                 },
                 "from": {
-                    "file": "C:\\Users\\fangz\\.android\\build-cache\\baa3a2d1ae0dd9d1435e4e292704bb5afa4ddc73\\output\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "/Users/macbook-pro/.android/build-cache/b60a7498ecebcd6fb54875c6deda93d6b6a6ce25/output/res/values-xlarge/values-xlarge.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 325
                 },
                 "from": {
-                    "file": "C:\\Users\\fangz\\.android\\build-cache\\baa3a2d1ae0dd9d1435e4e292704bb5afa4ddc73\\output\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "/Users/macbook-pro/.android/build-cache/b60a7498ecebcd6fb54875c6deda93d6b6a6ce25/output/res/values-xlarge/values-xlarge.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 391
                 },
                 "from": {
-                    "file": "C:\\Users\\fangz\\.android\\build-cache\\baa3a2d1ae0dd9d1435e4e292704bb5afa4ddc73\\output\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "/Users/macbook-pro/.android/build-cache/b60a7498ecebcd6fb54875c6deda93d6b6a6ce25/output/res/values-xlarge/values-xlarge.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 457
                 },
                 "from": {
-                    "file": "C:\\Users\\fangz\\.android\\build-cache\\baa3a2d1ae0dd9d1435e4e292704bb5afa4ddc73\\output\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "/Users/macbook-pro/.android/build-cache/b60a7498ecebcd6fb54875c6deda93d6b6a6ce25/output/res/values-xlarge/values-xlarge.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 512
                 },
                 "from": {
-                    "file": "C:\\Users\\fangz\\.android\\build-cache\\baa3a2d1ae0dd9d1435e4e292704bb5afa4ddc73\\output\\res\\values-xlarge\\values-xlarge.xml",
+                    "file": "/Users/macbook-pro/.android/build-cache/b60a7498ecebcd6fb54875c6deda93d6b6a6ce25/output/res/values-xlarge/values-xlarge.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
