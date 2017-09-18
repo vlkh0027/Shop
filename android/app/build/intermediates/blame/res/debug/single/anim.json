@@ -9,7 +9,7 @@
     },
     {
         "merged": "/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_in.xml",
-        "source": "/Users/macbook-pro/.android/build-cache/624963841807220c19910e72c759371c59ca352f/output/res/anim/catalyst_push_up_in.xml"
+        "source": "/Users/macbook-pro/.android/build-cache/3db11a8a6d71582d34e726ed0141ddd0053d1b57/output/res/anim/catalyst_push_up_in.xml"
     },
     {
         "merged": "/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
@@ -21,7 +21,7 @@
     },
     {
         "merged": "/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/res/merged/debug/anim/slide_up.xml",
-        "source": "/Users/macbook-pro/.android/build-cache/624963841807220c19910e72c759371c59ca352f/output/res/anim/slide_up.xml"
+        "source": "/Users/macbook-pro/.android/build-cache/3db11a8a6d71582d34e726ed0141ddd0053d1b57/output/res/anim/slide_up.xml"
     },
     {
         "merged": "/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
@@ -33,11 +33,11 @@
     },
     {
         "merged": "/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_out.xml",
-        "source": "/Users/macbook-pro/.android/build-cache/624963841807220c19910e72c759371c59ca352f/output/res/anim/catalyst_push_up_out.xml"
+        "source": "/Users/macbook-pro/.android/build-cache/3db11a8a6d71582d34e726ed0141ddd0053d1b57/output/res/anim/catalyst_push_up_out.xml"
     },
     {
         "merged": "/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/res/merged/debug/anim/slide_down.xml",
-        "source": "/Users/macbook-pro/.android/build-cache/624963841807220c19910e72c759371c59ca352f/output/res/anim/slide_down.xml"
+        "source": "/Users/macbook-pro/.android/build-cache/3db11a8a6d71582d34e726ed0141ddd0053d1b57/output/res/anim/slide_down.xml"
     },
     {
         "merged": "/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
@@ -45,7 +45,7 @@
     },
     {
         "merged": "/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/res/merged/debug/anim/fade_out.xml",
-        "source": "/Users/macbook-pro/.android/build-cache/624963841807220c19910e72c759371c59ca352f/output/res/anim/fade_out.xml"
+        "source": "/Users/macbook-pro/.android/build-cache/3db11a8a6d71582d34e726ed0141ddd0053d1b57/output/res/anim/fade_out.xml"
     },
     {
         "merged": "/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
@@ -61,6 +61,6 @@
     },
     {
         "merged": "/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/res/merged/debug/anim/fade_in.xml",
-        "source": "/Users/macbook-pro/.android/build-cache/624963841807220c19910e72c759371c59ca352f/output/res/anim/fade_in.xml"
+        "source": "/Users/macbook-pro/.android/build-cache/3db11a8a6d71582d34e726ed0141ddd0053d1b57/output/res/anim/fade_in.xml"
     }
 ]

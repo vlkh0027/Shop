@@ -1,7 +1,4 @@
-#Tue Sep 12 21:37:00 ICT 2017
-base.0=/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_9dc5480855f1b35ee9a636387868401e10675cb9
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_029a0dfb3cf43baba56f9adcebaf3f75af995c64/classes.dex
-base.1=/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_029a0dfb3cf43baba56f9adcebaf3f75af995c64
-file.0=/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_9dc5480855f1b35ee9a636387868401e10675cb9/classes.dex
+#Mon Sep 18 11:13:34 ICT 2017
+base.0=/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/macbook-pro/Desktop/Github/ShopNew/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

@@ -3,8 +3,8 @@ import{Image, StyleSheet, View, Dimensions, Text,TouchableOpacity} from 'react-n
 import {StackNavigator} from 'react-navigation';
 import TabNavigator from 'react-native-tab-navigator';
 
-import Order from './component_son/Order';
-import Search from './component_son/Search';
+import CartStack from './component_son/cart/Cart';
+import SearchStack from './component_son/search/Search';
 import Shop from './component_son/Shop';
 import Contact from './component_son/Contact';
 import Header from './Header';
@@ -39,13 +39,13 @@ export default class Home extends Component{
                 <Shop/>
               </TabNavigator.Item>
               <TabNavigator.Item
-                selected={this.state.selectedTab === 'order'}
+                selected={this.state.selectedTab === 'cart'}
                 title="Cart"
                 renderIcon={() => <Image style={styles.icon} source={require('./../image/cart.png')}/>} 
                 badgeText="1"
                 selectedTitleStyle={{color:'black', fontFamily:'Avenir'}}  
-                onPress={() => this.setState({ selectedTab: 'order' })}>
-                <Order/>
+                onPress={() => this.setState({ selectedTab: 'cart' })}>
+                <CartStack/>
               </TabNavigator.Item>
               <TabNavigator.Item
                 selected={this.state.selectedTab === 'search'}
@@ -53,7 +53,7 @@ export default class Home extends Component{
                 renderIcon={() => <Image style={styles.icon} source={require('./../image/search.png')}/>} 
                 selectedTitleStyle={{color:'black', fontFamily:'Avenir'}}  
                 onPress={() => this.setState({ selectedTab: 'search' })}>
-                <Search/>
+                <SearchStack/>
               </TabNavigator.Item>
               <TabNavigator.Item
                 selected={this.state.selectedTab === 'contact'}
