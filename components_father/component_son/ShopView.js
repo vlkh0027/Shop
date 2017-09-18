@@ -14,7 +14,7 @@ export default class ShopView extends Component{
            <ScrollView style={{flex:1}}>
                 <Collection/>      
                 <Category navigation ={this.props.navigation} />
-                <TopProduct/>
+                <TopProduct navigation ={this.props.navigation} s/>
          </ScrollView>    
         );
     }

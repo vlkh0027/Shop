@@ -19,13 +19,13 @@ export default class Category extends Component{
              </View>
                 <View style={imageView}>
                     <Swiper showsButtons={true}>
-                        <TouchableOpacity onPress = {()=>{navigate('Detail')}}>
+                        <TouchableOpacity onPress = {()=>{navigate('ListProducts')}}>
                             <Image style={image} source={require('./../../../image/adidasColl.png')}/>
                         </TouchableOpacity>
-                        <TouchableOpacity onPress = {()=>{navigate('Detail')}}>
+                        <TouchableOpacity onPress = {()=>{navigate('ListProducts')}}>
                             <Image style={image} source={require('./../../../image/nikeColl.png')}/>
                         </TouchableOpacity>
-                        <TouchableOpacity onPress = {()=>{navigate('Detail')}}>
+                        <TouchableOpacity onPress = {()=>{navigate('ListProducts')}}>
                             <Image style={image} source={require('./../../../image/nikeLebronColl.png')}/>
                         </TouchableOpacity>
                     </Swiper>

@@ -1,7 +1,13 @@
 import React,{Component} from 'react';
-import {Image, StyleSheet,View,Text,Dimensions} from 'react-native';
+import {Image, StyleSheet,View,Text,Dimensions, TouchableOpacity} from 'react-native';
 
 export default class TopProduct extends Component{
+
+    gotoDetail(){
+        const {navigate} = this.props.navigation;
+        navigate('Detail');
+    }
+
     render(){
         const {container, titleContainer, title, body, image, productContainer,textPrice, textName} = styles;
         return(           
@@ -10,27 +16,35 @@ export default class TopProduct extends Component{
                     <Text style={title}>TOP PRODUCT</Text>
                 </View>
                 <View style={body}>
-                    <View style ={productContainer}>
+                    <TouchableOpacity 
+                    onPress={()=>{this.gotoDetail()}}
+                    style ={productContainer}>
                         <Image style={image} source={require('./../../../image/hoddie2.png')}/>
                         <Text style={textName}>Name</Text>
                         <Text style={textPrice}>35$</Text>
-                    </View>
-                    <View style ={productContainer}>
+                    </TouchableOpacity>
+                    <TouchableOpacity 
+                    onPress={()=>{this.gotoDetail()}}
+                    tyle ={productContainer}>
                         <Image style={image} source={require('./../../../image/aothun1.png')}/>
                         <Text style={textName}>Name</Text>
                         <Text style={textPrice}>40$</Text>
-                    </View>
+                    </TouchableOpacity>
                     <View style={{height:10,width}}/>
-                    <View style ={productContainer}>
+                    <TouchableOpacity 
+                    onPress={()=>{this.gotoDetail()}}
+                    style ={productContainer}>
                         <Image style={image} source={require('./../../../image/aothun2.png')}/>
                         <Text style={textName}>Name</Text>
                         <Text style={textPrice}>35$</Text>
-                    </View>
-                    <View style ={productContainer}>
+                    </TouchableOpacity>
+                    <TouchableOpacity 
+                    onPress={()=>{this.gotoDetail()}}
+                    style ={productContainer}>
                         <Image style={image} source={require('./../../../image/hoddie3.png')}/>
                         <Text style={textName}>Name</Text>
                         <Text style={textPrice}>40$</Text>
-                    </View>
+                    </TouchableOpacity>
                 </View>
             </View>
         );
