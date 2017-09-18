@@ -19,6 +19,11 @@ export default class Home extends Component{
         this.state= {selectedTab: 'shop'}
         //this.props.navigation.navigate('DrawerClose');
     }
+
+    componentDidMount(){
+      fetch('.')
+    }
+
     render(){
         return(
         <View style={{flex:1}}>

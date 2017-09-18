@@ -8,7 +8,7 @@ export default class Menu extends Component{
     constructor(props){
         super(props);
         this.state={
-            isLoginJSX: false,
+            isLoginJSX: true,
         };
     }
     render(){
