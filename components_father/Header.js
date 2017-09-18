@@ -20,7 +20,8 @@ export default class Header extends Component{
                 </View>
                 <View style={{marginTop:-5}}>
                 <TextInput style={textInput}
-                placeholder="What do you want to buy?"/>
+                placeholder="What do you want to buy?"
+                underlineColorAndroid="transparent"/>
                 </View>
             </View>
         )
