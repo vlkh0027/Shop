@@ -5,23 +5,26 @@ import TabNavigator from 'react-native-tab-navigator';
 
 import CartStack from './component_son/cart/Cart';
 import SearchStack from './component_son/search/Search';
-import Shop from './component_son/Shop';
+import ShopStack from './component_son/Shop';
 import Contact from './component_son/Contact';
 import Header from './Header';
 var {height, width} = Dimensions.get('window');
 
 
 export default class Home extends Component{
-
  
     constructor(props){
         super(props);
-        this.state= {selectedTab: 'shop'}
-        //this.props.navigation.navigate('DrawerClose');
+        this.state= {
+          selectedTab: 'shop',
+          types:[],
+        }
     }
-
+    /* lay api load len hone */
     componentDidMount(){
-      fetch('.')
+      fetch('http://localhost/api/')
+      .then(res => res.json())
+      .then(resJSON => console.log(resJSON));
     }
 
     render(){
@@ -30,7 +33,7 @@ export default class Home extends Component{
            <Header onOpen={() => {
                   this.props.navigation.navigate('DrawerOpen');
 								}}/>
-    
+  
               <TabNavigator 
                 tabBarStyle={{ height:height/12 , borderWidth: 0, 
                  borderTopColor: 'gray' }}
@@ -41,7 +44,8 @@ export default class Home extends Component{
                 renderIcon={() => <Image style={styles.icon}  source={require('./../image/shop.png')}/>} 
                 selectedTitleStyle={{color:'black', fontFamily:'Avenir'}}    
                 onPress={() => this.setState({ selectedTab: 'shop' })}>
-                <Shop/>
+                <ShopStack types={this.state.types} />
+
               </TabNavigator.Item>
               <TabNavigator.Item
                 selected={this.state.selectedTab === 'cart'}
@@ -51,6 +55,7 @@ export default class Home extends Component{
                 selectedTitleStyle={{color:'black', fontFamily:'Avenir'}}  
                 onPress={() => this.setState({ selectedTab: 'cart' })}>
                 <CartStack/>
+
               </TabNavigator.Item>
               <TabNavigator.Item
                 selected={this.state.selectedTab === 'search'}
@@ -59,6 +64,7 @@ export default class Home extends Component{
                 selectedTitleStyle={{color:'black', fontFamily:'Avenir'}}  
                 onPress={() => this.setState({ selectedTab: 'search' })}>
                 <SearchStack/>
+
               </TabNavigator.Item>
               <TabNavigator.Item
                 selected={this.state.selectedTab === 'contact'}
@@ -67,6 +73,7 @@ export default class Home extends Component{
                 selectedTitleStyle={{color:'black', fontFamily:'Avenir'}}  
                 onPress={() => this.setState({ selectedTab: 'contact' })}>
                 <Contact/>
+                
               </TabNavigator.Item>
             </TabNavigator>
    

@@ -9,12 +9,18 @@ import Detail from './productDetail/Detail';
 import ListProducts from './productDetail/ListProducts';
 
 export default class ShopView extends Component{
+   
+    constructor(props){
+        super(props);     
+    }
+
     render(){
         return(
+
            <ScrollView style={{flex:1}}>
                 <Collection/>      
                 <Category navigation ={this.props.navigation} />
-                <TopProduct navigation ={this.props.navigation} s/>
+                <TopProduct navigation ={this.props.navigation} />
          </ScrollView>    
         );
     }

@@ -5,20 +5,27 @@ import Swiper from 'react-native-swiper';
 var {height, width} = Dimensions.get('window');
 var imageWidth = width-40;
 var imageHeight = height*0.35 - 45;
+
 export default class Category extends Component{
     constructor(props){
         super(props);
     }
     render(){
+        //const {types} = this.props;
         const {wrapper,image,text, textView, imageView} = styles;
         const {navigate} = this.props.navigation;
         return(
         <View style={wrapper}>   
             <View style={textView}> 
-                 <Text style={text}>LIST OF CATEGORY</Text>
+                 <Text style={text}>List category</Text>
              </View>
                 <View style={imageView}>
                     <Swiper showsButtons={true}>
+                        {/* { types.map(e=> (
+                            <TouchableOpacity onPress = {()=>{navigate('ListProducts')}}>
+                            <Image style={image} source={require('./../../../image/adidasColl.png')}/>
+                        </TouchableOpacity>
+                        ))} */}
                         <TouchableOpacity onPress = {()=>{navigate('ListProducts')}}>
                             <Image style={image} source={require('./../../../image/adidasColl.png')}/>
                         </TouchableOpacity>
