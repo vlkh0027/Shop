@@ -18,7 +18,7 @@ const ShopStack = StackNavigator({
   
     {
         initialRouteName:'ShopView',
-        initialRouteParams: {types:'linh'},
+        //initialRouteParams: this.props.navigation.state.paramsparams.types,
         headerMode:'none',
         navigationOptions :{
             

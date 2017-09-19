@@ -16,15 +16,15 @@ export default class ShopView extends Component{
 
     render(){
         return(
-
            <ScrollView style={{flex:1}}>
                 <Collection/>      
-                <Category navigation ={this.props.navigation} />
-                <TopProduct navigation ={this.props.navigation} />
+                <Category navigation ={this.props.navigation} screenProps={this.props.screenProps.type} />
+                <TopProduct navigation ={this.props.navigation} screenProps={this.props.screenProps.product}/>
          </ScrollView>    
         );
     }
 }
+
 const styles = StyleSheet.create({
     icon: {
       width: 25,

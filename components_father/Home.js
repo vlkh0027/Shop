@@ -18,13 +18,18 @@ export default class Home extends Component{
         this.state= {
           selectedTab: 'shop',
           types:[],
+          products:[],
         }
     }
     /* lay api load len hone */
     componentDidMount(){
       fetch('http://localhost/api/')
       .then(res => res.json())
-      .then(resJSON => console.log(resJSON));
+      .then(resJSON => {
+        const {type, product} = resJSON;
+        this.setState({ types: type, 
+         products:product });
+      });
     }
 
     render(){
@@ -44,7 +49,11 @@ export default class Home extends Component{
                 renderIcon={() => <Image style={styles.icon}  source={require('./../image/shop.png')}/>} 
                 selectedTitleStyle={{color:'black', fontFamily:'Avenir'}}    
                 onPress={() => this.setState({ selectedTab: 'shop' })}>
-                <ShopStack types={this.state.types} />
+                <ShopStack screenProps={{
+                  type : this.state.types,
+                  product : this.state.products,
+                }} 
+                 />
 
               </TabNavigator.Item>
               <TabNavigator.Item
@@ -73,7 +82,7 @@ export default class Home extends Component{
                 selectedTitleStyle={{color:'black', fontFamily:'Avenir'}}  
                 onPress={() => this.setState({ selectedTab: 'contact' })}>
                 <Contact/>
-                
+
               </TabNavigator.Item>
             </TabNavigator>
    

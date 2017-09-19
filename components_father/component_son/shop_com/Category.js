@@ -5,7 +5,7 @@ import Swiper from 'react-native-swiper';
 var {height, width} = Dimensions.get('window');
 var imageWidth = width-40;
 var imageHeight = height*0.35 - 45;
-
+const url ="http://localhost/api/images/type/";
 export default class Category extends Component{
     constructor(props){
         super(props);
@@ -20,21 +20,14 @@ export default class Category extends Component{
                  <Text style={text}>List category</Text>
              </View>
                 <View style={imageView}>
-                    <Swiper showsButtons={true}>
-                        {/* { types.map(e=> (
-                            <TouchableOpacity onPress = {()=>{navigate('ListProducts')}}>
-                            <Image style={image} source={require('./../../../image/adidasColl.png')}/>
-                        </TouchableOpacity>
-                        ))} */}
-                        <TouchableOpacity onPress = {()=>{navigate('ListProducts')}}>
-                            <Image style={image} source={require('./../../../image/adidasColl.png')}/>
-                        </TouchableOpacity>
-                        <TouchableOpacity onPress = {()=>{navigate('ListProducts')}}>
-                            <Image style={image} source={require('./../../../image/nikeColl.png')}/>
-                        </TouchableOpacity>
-                        <TouchableOpacity onPress = {()=>{navigate('ListProducts')}}>
-                            <Image style={image} source={require('./../../../image/nikeLebronColl.png')}/>
-                        </TouchableOpacity>
+                    <Swiper showsButtons={true} autoplay={true} loop={true}
+                    showsPagination width={imageWidth} height={imageHeight}> 
+                        {this.props.screenProps.map(e=> (
+                            <TouchableOpacity onPress = {()=>{navigate('ListProducts')}} key= {e.id} >
+                                <Image style={image} source={{uri:`${url}${e.image}`}} />
+                            </TouchableOpacity>
+                        ))}
+                        
                     </Swiper>
                 </View>       
         </View>
@@ -57,6 +50,7 @@ const styles = StyleSheet.create({
     },
     textView:{
         flex:1,
+        //height:50,
         justifyContent:'center',
         alignItems:'center',
     },
@@ -65,7 +59,9 @@ const styles = StyleSheet.create({
         height:imageHeight,
     },
     imageView:{
-        flex:4
+        flex:4,
+        //justifyContent:'flex-end',
+        
     },
     text:{
         fontSize:20,

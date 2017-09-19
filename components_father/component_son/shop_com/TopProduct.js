@@ -14,6 +14,11 @@ export default class TopProduct extends Component{
             <View style={container}>
                 <View style={titleContainer}>
                     <Text style={title}>TOP PRODUCT</Text>
+                    {this.props.screenProps.map(e=> (
+                        
+                        <Text key={e.id}>{e.name}</Text>
+                        ))}
+                    
                 </View>
                 <View style={body}>
                     <TouchableOpacity 
