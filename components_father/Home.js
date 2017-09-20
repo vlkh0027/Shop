@@ -19,6 +19,7 @@ export default class Home extends Component{
           selectedTab: 'shop',
           types:[],
           products:[],
+          cartArray:[],
         }
     }
     /* lay api load len hone */
@@ -63,7 +64,7 @@ export default class Home extends Component{
                 badgeText="1"
                 selectedTitleStyle={{color:'black', fontFamily:'Avenir'}}  
                 onPress={() => this.setState({ selectedTab: 'cart' })}>
-                <CartStack/>
+                <CartStack screenProps={this.state.cartArray}/>
 
               </TabNavigator.Item>
               <TabNavigator.Item

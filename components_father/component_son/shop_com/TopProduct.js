@@ -1,56 +1,48 @@
 import React,{Component} from 'react';
-import {Image, StyleSheet,View,Text,Dimensions, TouchableOpacity} from 'react-native';
+import {Image, StyleSheet,View,Text,Dimensions, TouchableOpacity, FlatList} from 'react-native';
+
+const url ="http://localhost/api/images/product/";
 
 export default class TopProduct extends Component{
 
-    gotoDetail(){
+    gotoDetail(data){
         const {navigate} = this.props.navigation;
-        navigate('Detail');
+        navigate('Detail',{data});
     }
 
     render(){
+        const{screenProps} = this.props;
         const {container, titleContainer, title, body, image, productContainer,textPrice, textName} = styles;
         return(           
             <View style={container}>
                 <View style={titleContainer}>
                     <Text style={title}>TOP PRODUCT</Text>
-                    {this.props.screenProps.map(e=> (
+                    {/* {screenProps.map(e=> (
                         
                         <Text key={e.id}>{e.name}</Text>
-                        ))}
+                        ))} */}
                     
                 </View>
-                <View style={body}>
-                    <TouchableOpacity 
-                    onPress={()=>{this.gotoDetail()}}
-                    style ={productContainer}>
-                        <Image style={image} source={require('./../../../image/hoddie2.png')}/>
-                        <Text style={textName}>Name</Text>
-                        <Text style={textPrice}>35$</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity 
-                    onPress={()=>{this.gotoDetail()}}
-                    tyle ={productContainer}>
-                        <Image style={image} source={require('./../../../image/aothun1.png')}/>
-                        <Text style={textName}>Name</Text>
-                        <Text style={textPrice}>40$</Text>
-                    </TouchableOpacity>
-                    <View style={{height:10,width}}/>
-                    <TouchableOpacity 
-                    onPress={()=>{this.gotoDetail()}}
-                    style ={productContainer}>
-                        <Image style={image} source={require('./../../../image/aothun2.png')}/>
-                        <Text style={textName}>Name</Text>
-                        <Text style={textPrice}>35$</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity 
-                    onPress={()=>{this.gotoDetail()}}
-                    style ={productContainer}>
-                        <Image style={image} source={require('./../../../image/hoddie3.png')}/>
-                        <Text style={textName}>Name</Text>
-                        <Text style={textPrice}>40$</Text>
-                    </TouchableOpacity>
-                </View>
+                
+                <FlatList contentContainerStyle={body} 
+                   
+                    data={screenProps} 
+                    renderItem={({item}) => 
+                        <TouchableOpacity 
+                        onPress={()=>{this.gotoDetail(item)}}
+                        style ={productContainer}>
+                            <Image style={image} source={{uri:`${url}${item.images[0]}`}}/>
+                            <Text style={textName}>{item.name.toUpperCase()}</Text>
+                            <Text style={textPrice}>{item.price}$</Text>
+                        </TouchableOpacity>
+                    }
+                    keyExtractor={item => item.id}
+                    horizontal={false}
+                    numColumns={2}
+                />
+              
+                
+                    
             </View>
         );
     }
@@ -78,9 +70,9 @@ const styles=StyleSheet.create({
         fontSize:20,
     },
     body:{
-        flexDirection:'row',
+        //flexDirection:'row',
         justifyContent:'space-around',
-        flexWrap:'wrap',
+        //flexWrap:'wrap',
         paddingBottom:10,
         
     },
@@ -89,6 +81,8 @@ const styles=StyleSheet.create({
         shadowOffset:{width:0, height:3},
         shadowOpacity:0.2,
         paddingBottom:5,
+        marginLeft:13,
+        marginBottom:10,
         
     },
     image:{
