@@ -8,6 +8,10 @@ import SearchStack from './component_son/search/Search';
 import ShopStack from './component_son/Shop';
 import Contact from './component_son/Contact';
 import Header from './Header';
+import global from './global';
+import initData from './../api/initData';
+import saveCart from './../api/saveCart';
+import getCart from './../api/getCart';
 var {height, width} = Dimensions.get('window');
 
 
@@ -18,20 +22,33 @@ export default class Home extends Component{
         this.state= {
           selectedTab: 'shop',
           types:[],
-          products:[],
+          topProducts:[],
           cartArray:[],
         }
+        global.addProductToCart = this.addProductToCart.bind(this);
     }
+
     /* lay api load len hone */
     componentDidMount(){
-      fetch('http://localhost/api/')
-      .then(res => res.json())
+      initData()
       .then(resJSON => {
         const {type, product} = resJSON;
-        this.setState({ types: type, 
-         products:product });
+        this.setState({ 
+          types: type, 
+          topProducts:product });
       });
+      getCart()
+      .then(cartArrays => this.setState({cartArray:cartArrays}));
+    };
+
+    //them product
+    addProductToCart(product){
+      this.setState(
+        { cartArray: this.state.cartArray.concat({product, quantity: 1})},
+        () => saveCart(this.state.cartArray),
+      );
     }
+
 
     render(){
         return(
@@ -52,7 +69,7 @@ export default class Home extends Component{
                 onPress={() => this.setState({ selectedTab: 'shop' })}>
                 <ShopStack screenProps={{
                   type : this.state.types,
-                  product : this.state.products,
+                  product : this.state.topProducts,
                 }} 
                  />
 
@@ -61,7 +78,7 @@ export default class Home extends Component{
                 selected={this.state.selectedTab === 'cart'}
                 title="Cart"
                 renderIcon={() => <Image style={styles.icon} source={require('./../image/cart.png')}/>} 
-                badgeText="1"
+                badgeText={this.state.cartArray.length}
                 selectedTitleStyle={{color:'black', fontFamily:'Avenir'}}  
                 onPress={() => this.setState({ selectedTab: 'cart' })}>
                 <CartStack screenProps={this.state.cartArray}/>

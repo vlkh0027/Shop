@@ -2,13 +2,19 @@ import React, { Component } from 'react';
 import { 
     View, Text, StyleSheet, Image, Dimensions, ScrollView, TouchableOpacity 
 } from 'react-native';
-
+import global from './../../global';
 const url ="http://localhost/api/images/product/";
 
 export default class Detail extends Component {
     goBack() {
         this.props.navigation.goBack()
     }
+
+    addProduct(){
+        const {data} = this.props.navigation.state.params;
+        global.addProductToCart(data);
+    }
+
     render() {
         const {
             wrapper, cardStyle, header,
@@ -25,7 +31,7 @@ export default class Detail extends Component {
                         <TouchableOpacity onPress={this.goBack.bind(this)}>
                             <Image style={backStyle} source={require('./../../../image/back.png')} />
                         </TouchableOpacity>
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={()=>{this.addProduct()}}>
                             <Image style={cartStyle} source={require('./../../../image/cart.png')} />
                         </TouchableOpacity>
                     </View>
