@@ -3,7 +3,7 @@ import {
     View, Text, TouchableOpacity, ScrollView, 
     Dimensions, StyleSheet, Image , FlatList
 } from 'react-native';
-
+import global from './../../global';
 const url ="http://localhost/api/images/product/";
 
 function toTitleCase(str) {
@@ -17,12 +17,26 @@ class CartView extends Component {
         navigate('Detail',{data});
     }
 
+    increaseQuantity(id){
+        global.increaseQuantity(id);
+    }
+
+    decreaseQuantity(id){
+        global.decreaseQuantity(id);
+    }
+
+    remove(id){
+        global.removeProduct(id);
+    }
+
     render() {
         const { main, checkoutButton, checkoutTitle, wrapper,
         product, mainRight, productController,
             txtName, txtPrice, productImage, numberOfProduct, 
             txtShowDetail, showDetailContainer } = styles; 
         const{screenProps} = this.props;
+        const arrTotalPrice = screenProps.map(e => e.product.price * e.quantity);
+        const total = arrTotalPrice.length ? arrTotalPrice.reduce((a, b) => a + b ) : 0 ;
         return (
             <View style={wrapper}> 
                 {/* <ScrollView style={main}>
@@ -36,7 +50,7 @@ class CartView extends Component {
                             <View style={[mainRight]}>
                                 <View style={{ justifyContent: 'space-between', flexDirection: 'row' }}>
                                     <Text style={txtName}>{toTitleCase(item.product.name)}</Text>
-                                    <TouchableOpacity>
+                                    <TouchableOpacity onPress={()=>{this.remove(item.product.id)}}>
                                         <Text style={{ fontFamily: 'Avenir', color: '#969696' }}>X</Text>
                                     </TouchableOpacity>
                                 </View>
@@ -45,11 +59,11 @@ class CartView extends Component {
                                 </View>
                                 <View style={productController}>
                                     <View style={numberOfProduct}>
-                                        <TouchableOpacity>
+                                        <TouchableOpacity onPress={()=>{this.increaseQuantity(item.product.id)}}>
                                             <Text>+</Text>
                                         </TouchableOpacity>
                                         <Text>{item.quantity}</Text>
-                                        <TouchableOpacity>
+                                        <TouchableOpacity onPress={()=>{this.decreaseQuantity(item.product.id)}}>
                                             <Text>-</Text>
                                         </TouchableOpacity>
                                     </View>
@@ -65,7 +79,7 @@ class CartView extends Component {
                 keyExtractor={item => item.product.id}
                 />
                 <TouchableOpacity style={checkoutButton}>
-                    <Text style={checkoutTitle}>TOTAL {1000}$ CHECKOUT NOW</Text>
+                    <Text style={checkoutTitle}>TOTAL {total}$ CHECKOUT NOW</Text>
                 </TouchableOpacity>
             </View>
         );

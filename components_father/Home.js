@@ -26,6 +26,9 @@ export default class Home extends Component{
           cartArray:[],
         }
         global.addProductToCart = this.addProductToCart.bind(this);
+        global.increaseQuantity = this.increaseQuantity.bind(this);
+        global.decreaseQuantity = this.decreaseQuantity.bind(this);
+        global.removeProduct = this.removeProduct.bind(this);
     }
 
     /* lay api load len hone */
@@ -49,6 +52,33 @@ export default class Home extends Component{
       );
     }
 
+    increaseQuantity(productID){
+      const newCartArr = this.state.cartArray.map(e => {
+        if( e.product.id !== productID) return e;
+        return { product: e.product, quantity: e.quantity+1 };
+      });
+      this.setState({cartArray:newCartArr},
+        () => saveCart(this.state.cartArray)
+      );
+      
+    }
+
+    decreaseQuantity(productID){
+      const newCartArr = this.state.cartArray.map(e => {
+        if( e.product.id !== productID) return e;
+        return { product: e.product, quantity: e.quantity-1 };
+      });
+      this.setState({cartArray:newCartArr},
+        () => saveCart(this.state.cartArray), 
+      );
+    }
+
+    removeProduct(productID){
+      const newCartArr = this.state.cartArray.filter(e => e.product.id !== productID);
+      this.setState({cartArray:newCartArr},
+        () => saveCart(this.state.cartArray), 
+      );
+    }
 
     render(){
         return(
