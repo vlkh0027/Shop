@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import {View, Text, Image, TouchableOpacity,StyleSheet,Dimensions,TextInput} from 'react-native';
+import register from './../../api/register';
+import SignIn from './SignIn';
+import SignUp from './SignUp';
 var {height, width} = Dimensions.get('window');
 export default class Authentication extends Component{
   constructor(props){
@@ -10,6 +13,11 @@ export default class Authentication extends Component{
       isSignIn:true,
     }
   }
+
+  // componentDidMount(){
+  //   register('nhatlinh@gmail.com','linh','123')
+  //   .then(res => console.log(res));
+  // }
 
   signIn(){
     this.setState ({
@@ -28,55 +36,11 @@ export default class Authentication extends Component{
       const {wrapper,row1,title,icon,giua,duoi,container, signIn, signUp, inactiveStyle, activeStyle, input, bigButton, bigButtonText} = styles;
 
       const signInJSX = (
-        <View style={giua}>
-          <TextInput
-              style={input}
-              placeholder="Enter UserName"
-              onChangeText={(username) => this.setState({username})}
-              value={this.state.username}
-            />
-            <TextInput
-              style={input}
-              placeholder="Enter Password"
-              onChangeText={(password) => this.setState({password})}
-              value={this.state.password}
-            />
-            <TouchableOpacity style={bigButton}>
-              <Text style={bigButtonText}>SIGN IN NOW</Text>
-            </TouchableOpacity>
-        </View>
+       <SignIn/>
       );
 
       const signUpJSX = (
-      <View style={giua}>
-        <TextInput
-            style={input}
-            placeholder="Enter UserName"
-            onChangeText={(username) => this.setState({username})}
-            value={this.state.username}
-          />
-          <TextInput
-            style={input}
-            placeholder="Enter Password"
-            onChangeText={(password) => this.setState({password})}
-            value={this.state.password}
-          />
-          <TextInput
-            style={input}
-            placeholder="Enter Email"
-            onChangeText={(password) => this.setState({password})}
-            value={this.state.password}
-          />
-          <TextInput
-            style={input}
-            placeholder="Enter Re_Email"
-            onChangeText={(password) => this.setState({password})}
-            value={this.state.password}
-          />
-          <TouchableOpacity style={bigButton}>
-            <Text style={bigButtonText}>SIGN IN NOW</Text>
-          </TouchableOpacity>
-      </View>
+      <SignUp/>
       );
 
       const {isSignIn} = this.state;
